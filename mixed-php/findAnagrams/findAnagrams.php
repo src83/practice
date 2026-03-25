@@ -15,7 +15,6 @@ $words = ["cat", "dog", "tac", "god", "act"];
 $response = findAnagrams($words);
 print_r($response);
 
-// Bad solution
 function findAnagrams(array $words): array
 {
     $src = array_flip($words);
@@ -34,8 +33,8 @@ function findAnagrams(array $words): array
         }
 
         array_unshift($buff, $key) ;
-        #$src[$key] = $buff;
-        $src[$key] = implode(',', $buff); // если хотим строку
+        $src[$key] = $buff;
+//      $src[$key] = implode(',', $buff);  // если хотим строку
     }
 
     return $src;
