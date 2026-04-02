@@ -51,10 +51,3 @@ function isValidIP(string $ip): bool
 # if (is_int($octet)) { print_r('int' . PHP_EOL); } else { print_r('string' . PHP_EOL); }
 # if ($octet === '1') { $isValid = false; }
 # if (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) { return false; }
-
-
-//function isValidIP(string $str): bool
-//{
-//    // TODO
-//    return false;
-//}
